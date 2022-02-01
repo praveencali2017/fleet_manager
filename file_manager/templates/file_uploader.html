@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fleet File Uploader</title>
+</head>
+<body>
+<h2>File Manager</h2>
+<h4>Upload File: {{status}}</h4>
+<form action="/file_manager/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="fileUploadInp">File: </label>
+    <input id="fileUploadInp" type="file" name="file" placeholder="Select file">
+    <input type="submit" value="Upload">
+</form>
+</body>
+</html>

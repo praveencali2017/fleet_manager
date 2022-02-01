@@ -1,0 +1,1 @@
+from fleetmanager.celery import app as celery_app
